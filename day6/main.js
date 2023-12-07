@@ -30,10 +30,10 @@ let input = {
         'time': 93,
         'distance': 1440
     },
-    'case5': {
-        'time': 56977793,
-        'distance': 499221010971440
-    }
+    // 'case5': {
+    //     'time': 56977793,
+    //     'distance': 499221010971440
+    // }
 }
 
 let product = 1;
@@ -58,4 +58,5 @@ for (const key in input) {
     }
 }
 
-console.log(numberOfWays(input.case5));
+console.log(product);
+// console.log(numberOfWays(input.case5));
