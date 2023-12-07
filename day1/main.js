@@ -52,16 +52,10 @@ const dataArray = readData.split('\n');
 const myMap = new Map(Object.entries(numbers));
 
 function getNumber(array) {
-    let str = array.join('');
-    for (let [key, value] of myMap) {
-        str = str.split(key).join(value);
-    }
-    // in case of "eightwothree" returns "eigh23"
-    console.log(str)
     let out = [];
     let sum = 0;
-    for (let i=0; i<str.length; i++) {
-        let temp = str[i].split("");
+    for (let i=0; i<array.length; i++) {
+        let temp = array[i].split("");
         let number = [];
         for (let j=0; j<=temp.length; j++) {
             if (myMap.has(temp[j])) {
@@ -84,8 +78,12 @@ function getNumber(array) {
     return sum;
 }
 
-console.log(getNumber(test2))
+console.log(getNumber(test))
+console.log(parseInt("jdms2341"));
 
+function getNumber2(array) {
+
+}
 
 
 // "one": '1',
